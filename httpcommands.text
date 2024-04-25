@@ -1,0 +1,6 @@
+1. http POST 127.0.0.1/api/login phone=+8801853685315
+2. http POST 127.0.0.1/api/login/verify phone=+8801853685315 login_code=996650
+3. http GET 127.0.0.1/api/user 'Authorization: Bearer 1|8w8gewuR55h1SouHX3bdArmuphhmu0uCALjDGF1Cfa4b3b11'
+4. http POST 127.0.0.1/api/driver 'Authorization: Bearer 1|8w8gewuR55h1SouHX3bdArmuphhmu0uCALjDGF1Cfa4b3b11' Accept:application/json year=2020 name=sadaf make=Honda model=Accord color=White license_plate=FLA123
+5. http GET 127.0.0.1/api/driver 'Authorization: Bearer 1|8w8gewuR55h1SouHX3bdArmuphhmu0uCALjDGF1Cfa4b3b11'
+6. http POST 127.0.0.1/api/trip 'Authorization: Bearer 1|8w8gewuR55h1SouHX3bdArmuphhmu0uCALjDGF1Cfa4b3b11' destination_name=Starbucks destination:='{"lat":12.323536, "lng":23.359230}' origin:='{"lat": 35.293583, "lng": 39.203905}'
